@@ -101,6 +101,19 @@ void edit_profile() {
 
 void show_profile (bool func) {
 //  Profile info
+    if(func) {
+        cout << "Your username: " << new_user.get_name() << endl;
+        cout << "Your email: " << new_user.get_email() << endl;
+        cout << "Password: " << new_user.get_pass() << endl;
+    }
+    cout << "Hit 1 to edit a profile\n"
+         << "Or enter 0 to go back to main page\n";
+    int user_input;
+    cin >> user_input;
+
+    if (user_input == 1){
+        edit_profile();
+    }
 
 }
 
