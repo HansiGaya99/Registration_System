@@ -106,6 +106,33 @@ void show_profile (bool func) {
 
 int register_new_acc() {
     //new account details
+    cout << "Do you want to register with new account? (y/n)" << endl;
+    char answer;
+    cin >> answer;
+
+    if(answer == 'y') {
+        cout << "Enter your Username: ";
+        string new_username;
+        cin >> new_username;
+        cout << endl;
+
+        cout << "Enter your Email: ";
+        string new_email;
+        cin >> new_email;
+        cout << endl;
+
+        cout << "Enter new password: ";
+        string new_pass;
+        cin >> new_pass;
+        cout << endl;
+
+
+        create_new_acc(new_username, new_email, new_pass);
+        show_profile(wants_to_login());
+    } else if(answer == 'n') {
+        cout << "Exit" << endl;
+        return 0;
+    }
 }
 
 void login() {
