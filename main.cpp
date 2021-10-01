@@ -80,6 +80,23 @@ void set_age() {
 
 void edit_profile() {
     //edit details
+    cout << "1 - Edit Username\n"
+         << "2 - Edit Email\n"
+         << "3 - Edit Password\n"
+         <<"4 - Add your age\n";
+    int user_input;
+    cout << "Enter number: ";
+    cin >> user_input;
+
+    if(user_input == 1) {
+        edit_username();
+    } else if(user_input == 2) {
+        edit_email();
+    } else if(user_input == 3) {
+        edit_pass();
+    } else if(user_input == 4) {
+        set_age();
+    }
 }
 
 void show_profile (bool func) {
