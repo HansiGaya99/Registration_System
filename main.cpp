@@ -84,7 +84,7 @@ void edit_profile() {
 
 void show_profile (bool func) {
 //  Profile info
-    
+
 }
 
 int register_new_acc() {
@@ -96,6 +96,15 @@ void login() {
     string password;
 
     //login details
+    cout << "Enter username: \n";
+    cin >> username;
+    cout << "Enter password: \n";
+    cin >> password;
+
+    if(username == new_user.get_name() && password == new_user.get_pass()) {
+        cout << "Logged in successfully!\n";
+    }
+    cout << "Something is wrong, try again!\n";
 }
 
 
