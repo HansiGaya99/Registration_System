@@ -119,7 +119,7 @@ void show_profile (bool func) {
 
 int register_new_acc() {
     //new account details
-    cout << "Do you want to register with new account? (y/n)" << endl;
+    cout << "Do you want to register with new account  ? (y/n)" << endl;
     char answer;
     cin >> answer;
 
@@ -165,10 +165,10 @@ void login() {
 }
 
 
-void say_hello() {
-    cout << "\n\n1 - Create New Account\n"
-         << "2 - Login\n\n"
-         << "Enter the number: ";
+//void say_hello() {
+    //cout << "\n\n1 - Create New Account\n"
+         //<< "2 - Login\n\n"
+         //<< "Enter the number: ";
 }
 
 void start_menu() {
